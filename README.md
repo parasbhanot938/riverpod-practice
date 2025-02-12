@@ -1,16 +1,64 @@
-# riverpod_demo
+# riverpod_practice
 
-A new Flutter project.
+This Flutter project demonstrates the implementation of a search functionality using the Riverpod state management package. The app filters a product list based on the user’s search input and displays the results dynamically.
 
-## Getting Started
+## **Directory Structure**
 
-This project is a starting point for a Flutter application.
+The `lib/search/` directory contains the following files:
 
-A few resources to get you started if this is your first Flutter project:
+- **`product_notifier.dart`**: Contains the Riverpod `StateNotifier` and provider for managing and filtering the product list.
+- **`product_filter_screen.dart`**: The UI screen where users can search for products and view the filtered list.
+- **`product_model.dart`**: Defines the `Product` model used to represent individual products.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## **Features**
+
+- **State Management with Riverpod**: Uses `StateNotifier` and `StateNotifierProvider` to manage product data and filter logic.
+- **Dynamic Search**: Filters the product list in real-time based on the user’s input.
+- **Clean Architecture**: Separates logic, data models, and UI components into individual files for better maintainability.
+
+---
+
+## **File Descriptions**
+
+### 1. **`product_model.dart`**
+### 2. **`product_notifier.dart`**
+### 3. **`product_filter_screen.dart`**
+The UI screen where:
+- Users can input search queries.
+- ![products.png](assets/images/products.png)
+- The filtered product list is displayed dynamically.
+- ![filter.png](assets/images/filter.png)
+- Integrates with Riverpod providers to fetch and display filtered data.
+
+---
+
+## **Getting Started**
+
+1. **Install Dependencies**
+   Run the following command to install the required packages:
+   ```bash
+   flutter pub get
+   ```
+
+2. **Run the App**
+   Start the app using:
+   ```bash
+   flutter run
+   ```
+
+## **Packages Used**
+
+- [**Riverpod**](https://pub.dev/packages/riverpod): For state management.
+- [**Flutter**](https://flutter.dev): For building the UI.
+- Check pubspec.yaml for more plugins
+
+---
+
+## **Future Enhancements**
+
+- Add pagination to handle large product lists.
+- Integrate a backend API for dynamic product data.
+- Improve UI with animations and better UX.
+
